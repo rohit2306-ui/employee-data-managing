@@ -1,0 +1,760 @@
+.outer-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(203, 233, 244);
+  padding: 12px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e40af; /* blue-700 like Tailwind */
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.username {
+  font-size: 16px;
+  color: #333;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .navbar-user {
+    margin-top: 0;
+  }
+}
+.main-page {
+  height: 100vh;
+  background: linear-gradient(to right, #1e3a8a, #3b82f6); /* blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 1s ease-in;
+}
+
+.main-content {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.main-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.main-buttons button {
+  padding: 12px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  background-color: white;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-buttons button:hover {
+  background-color: #1e3a8a;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .main-content h1 {
+    font-size: 26px;
+  }
+  .main-buttons button {
+    display: block;
+    margin: 10px auto;
+  }
+}
+/* LoginPage.css */
+
+.login-page {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page input[type="email"],
+.login-page input[type="password"] {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login-page input[type="email"]:focus,
+.login-page input[type="password"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.login-page button {
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-page button:hover {
+  background-color: #357abd;
+}
+
+@media screen and (max-width: 480px) {
+  .login-page {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+.signup-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  background-color: #0066ff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #004ecb;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+  .signup-container {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+
+  .signup-form input,
+  .signup-form button {
+    font-size: 14px;
+  }
+}
+.add-employee-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.add-employee-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.add-employee-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-employee-container input,
+.add-employee-container select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+.add-employee-container input:focus,
+.add-employee-container select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.radio-group,
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.add-employee-container button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-employee-container button:hover {
+  background-color: #2980b9;
+}
+.dashboard-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header container: User info + Add button */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* User details box */
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Profile image */
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3498db;
+}
+
+/* User info text */
+.user-info p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+/* Add Employee button on left top */
+.add-employee-btn {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee-btn:hover {
+  background-color: #2980b9;
+}
+
+.employee-heading {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Filter and sort bar */
+.filter-sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Search input */
+.filter-sort-bar input[type="text"] {
+  padding: 10px 14px;
+  width: 260px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.filter-sort-bar input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Sort dropdown */
+.filter-sort-bar select {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-sort-bar select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Employee table */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.employee-table thead {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.employee-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.manage-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.manage-btn:hover {
+  background-color: #1e8449;
+}
+
+/* No employees text */
+.no-employees {
+  font-style: italic;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .filter-sort-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-sort-bar input,
+  .filter-sort-bar select {
+    width: 100%;
+  }
+}
+
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.add-employee-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  /* background-color: #2980b9; */
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-employee-btn:hover {
+  background-color: #1c5980;
+}
+
+.employee-heading {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.employee-table th {
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+}
+
+.manage-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.manage-btn:hover {
+  background-color: #27ae60;
+}
+
+.no-employees {
+  margin-top: 20px;
+  font-style: italic;
+  color: #999;
+}
+.manage-container {
+  max-width: auto;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+/* display: flex; */
+/* flex-wrap: wrap; */
+  /* display: flex; */
+}
+
+.employee-card {
+  background-color: #fefefe;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.text{
+  margin: auto;
+}
+
+.employee-card.inactive {
+  background-color: #fff3f3;
+  border: 1px solid #f00;
+}
+
+.employee-card img {
+  width: 23%;
+  object-fit: contain;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; flex-direction: column;
+  margin: auto;
+}
+
+.button-group button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #2980b9;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.deactivate-btn {
+  background-color: #f1c40f;
+  color: black;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+.outer-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24292e;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff3333;
+}
+/* EditEmployee.css */
+
+.edit-employee-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edit-employee-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+}
+
+.edit-employee-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.edit-employee-container input[type="text"],
+.edit-employee-container input[type="email"],
+.edit-employee-container input[type="url"],
+.edit-employee-container input[type="password"],
+.edit-employee-container input:not([type="radio"]) {
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-employee-container input[type="text"]:focus,
+.edit-employee-container input[type="email"]:focus,
+.edit-employee-container input[type="url"]:focus,
+.edit-employee-container input:not([type="radio"]):focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+  color: #444;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.edit-employee-container button[type="submit"] {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-employee-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  .edit-employee-container {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+}
